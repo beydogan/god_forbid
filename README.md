@@ -1,8 +1,6 @@
-# GodForbid
+# God Forbid
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/god_forbid`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+God Forbid is a gem which protects your Rails applications by checking request headers and adding new response headers on each request. It's very easy to use and you no longer need SSL, God forbid! 
 
 ## Installation
 
@@ -22,7 +20,11 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Add following line to your `ApplicationController`
+
+```ruby
+    include GodForbid
+```
 
 ## Development
 
