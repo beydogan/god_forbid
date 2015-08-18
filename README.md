@@ -2,6 +2,22 @@
 
 God Forbid is a gem which protects your Rails applications by checking request headers and adding new response headers on each request. It's very easy to use and you no longer need SSL, God forbid! 
 
+# How does it protect your app?
+
+Its very easy!
+
+It adds following headers to each response;
+
+```
+
+X-Security-Policy: God Forbid
+X-Start-With: Bismillahirrahmanirrahim (In the name of Allah, the beneficent the merciful)
+
+```
+
+It also checks each request's same headers and if they don't match it raises `Not Secure` exception.
+
+
 ## Installation
 
 Add this line to your application's Gemfile:
